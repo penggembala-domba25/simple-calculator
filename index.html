@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/light-mode.css" id="theme">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="flex-container-column">
+        <div class="header">
+            <h3>
+                Calculator
+            </h3>
+        </div>
+        <div class="display">
+            <input type="text" readonly id="display-result">
+        </div>
+        <div class="flex-container-row">
+            <button class="operator clear">C</button>
+            <button class="operator inverse">+/-</button>
+            <button class="operator delete">DEL</button>
+            <button class="operator devide" value="/">/</button>
+        </div>
+        <div class="flex-container-row">
+            <button class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="operator multiply" value="*">X</button>
+        </div>
+        <div class="flex-container-row">
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="operator subtract" value="-">-</button>
+        </div>
+        <div class="flex-container-row">
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="operator add" value="+">+</button>
+        </div>
+        <div class="flex-container-row">
+            <button class="number" value="0">0</button>
+            <button class="operator dot" value=".">.</button>
+            <button class="operator equals double-row" value="=">=</button>
+        </div>
+        <div class="additional-button">
+            <button class="non-calculate">
+                <a href="">
+                    <i class="fa fa-github"></i>
+                </a>GitHub
+            </button>
+            <button class="non-calculate" id="change-theme" onclick="changeTheme()">
+                <i class="fa fa-moon-o"></i>
+                switch
+            </button>
+        </div>
+    </div>
+
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>

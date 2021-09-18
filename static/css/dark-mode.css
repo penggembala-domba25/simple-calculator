@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(20, 19, 19);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.header {
+    text-align: center;
+    padding: 2vh 0 1vh;
+    background-color: rgb(47, 51, 50);
+    margin: 0 3px;
+    color: white;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 30%;
+    margin: 10vh auto 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.display {
+    margin: 3px;
+}
+
+#display-result {
+    width: 100%;
+    background-color: rgb(47, 51, 50);
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: right;
+    /* padding: 40px 60px; */
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    flex-basis: 25%;
+    text-align: center;
+    font-size: 1em;
+    padding: 20px 0;
+    margin: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(47, 51, 50);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    max-width: 25%;
+}
+
+button:hover {
+    opacity: 50%;
+}
+
+.equals,
+.clear,
+.delete {
+    background-color: rgb(148, 32, 32);
+    color: white;
+}
+
+.double-row {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.additional-button button {
+    margin-top: 2vh;
+    padding: 10px;
+    color: white;
+    float: left;
+}
+
+.additional-button a {
+    text-decoration: none;
+}
+
+.additional-button i {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .flex-container-column {
+        max-width: 45%;
+    }
+    #display-result {
+        padding: 13px 26px;
+    }
+    button {
+        /* padding: 10px; */
+        font-size: 0.8em;
+        margin: 3px;
+    }
+    /* .display {
+        height: 40%;
+    } */
+    .history {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex-container-column {
+        max-width: 65%;
+    }
+    button {
+        /* padding: 10px; */
+        font-size: 0.7em;
+    }
+    #display-result {
+        padding: 11px 22px;
+    }
+    /* .display {
+        height: 40%;
+    } */
+    .history {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .flex-container-column {
+        max-width: 90%;
+    }
+    #display-result {
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+    button {
+        padding: 15px 0;
+        font-size: 0.6em;
+        margin: 2px;
+        /* max-height: 10%; */
+    }
+    .display {
+        margin: 3px;
+    }
+    .history {
+        width: 100%;
+    }
+}
