@@ -210,11 +210,7 @@ function performCalculation() {
         result: calculator.resultCalculation
     }
 
-    calculator.history.push(
-        newHistory
-    )
-
-    console.log(calculator.history)
+    // console.log(calculator.history)
 
     updateDisplay(true)
     renderHistory();
