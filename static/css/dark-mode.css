@@ -24,7 +24,7 @@ body {
 .flex-container-column {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     max-width: 30%;
     margin: 10vh auto 0 auto;
     text-align: right;
